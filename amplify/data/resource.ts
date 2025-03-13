@@ -6,7 +6,7 @@ const schema = a.schema({
       name:a.string(),
       description: a.string(),
       note_url: a.string(),
-      category: a.string(),
+      note_category: a.string(),
       image: a.string(),
     })
     .authorization((allow) => [allow.owner()]),

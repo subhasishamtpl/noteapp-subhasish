@@ -60,7 +60,7 @@ export default function App() {
       name: form.get("name"),
       description: form.get("description"),
       note_url: form.get("note_url"),
-      category: form.get("catgeory"),
+      note_category: form.get("note_category"),
       image: form.get("image").name,
     });
 
@@ -134,7 +134,7 @@ export default function App() {
                 required
               />
               <TextField
-                name="category"
+                name="note_category"
                 placeholder="Note category"
                 label="Note category"
                 labelHidden
@@ -180,7 +180,7 @@ export default function App() {
                 </View>
                 <Text fontStyle="italic">{note.description}</Text>
                 <Text fontStyle="italic">{note.note_url}</Text>
-                <Text fontStyle="italic">{note.category}</Text>
+                <Text fontStyle="italic">{note.note_category}</Text>
                 {note.image && (
                   <Image
                     src={note.image}
